@@ -10,13 +10,13 @@
       "iconClass": "icon-nginx",
       "openshift.io/long-description": "This template defines resources needed to develop a static application served by Nginx HTTP server and a reverse proxy (nginx), including a build configuration and application deployment configuration.",
       "openshift.io/provider-display-name": "Red Hat, Inc.",
-      "openshift.io/documentation-url": "https://github.com/sclorg/nginx-ex",
+      "openshift.io/documentation-url": "https://github.com/danparkr/nginx-proxy",
       "openshift.io/support-url": "https://access.redhat.com"
     }
   },
   "message": "The following service(s) have been created in your project: ${NAME}.\n\nFor more information about using this template, including OpenShift considerations, see https://github.com/sclorg/nginx-ex/blob/master/README.md.",
   "labels": {
-    "template": "nginx-example"
+    "template": "nginx-proxy"
   },
   "objects": [
     {
@@ -171,7 +171,7 @@
           "spec": {
             "containers": [
               {
-                "name": "nginx-example",
+                "name": "nginx-proxy",
                 "image": " ",
                 "ports": [
                   {
@@ -219,7 +219,7 @@
       "displayName": "Name",
       "description": "The name assigned to all of the frontend objects defined in this template.",
       "required": true,
-      "value": "nginx-example"
+      "value": "nginx-proxy"
     },
     {
       "name": "NAMESPACE",
@@ -247,7 +247,7 @@
       "displayName": "Git Repository URL",
       "description": "The URL of the repository with your application source code.",
       "required": true,
-      "value": "https://github.com/sclorg/nginx-ex.git"
+      "value": "https://github.com/danparkr/nginx-proxy.git"
     },
     {
       "name": "SOURCE_REPOSITORY_REF",
